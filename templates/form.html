@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Thank you...!
+{% endblock %}
+
+{% block content%}
+
+      <div class="container">
+        <h3>Credentials received. Will contact you soon.</h3>
+        <br><br>
+         <ul>
+            {% for subscriber in subscribers %}
+            <li>{{subscriber}}</li>
+            {% endfor %}
+         </ul>
+      </div>
+
+{%endblock%}
